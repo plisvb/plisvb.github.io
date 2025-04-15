@@ -1,0 +1,38 @@
+<a href="{{base}}/eng/index.html" class="mobile-logo {% if messageBanner == "yes" %}banner-padding{% endif %}"></a>
+<a href="#" class="mobile-nav-btn {% if messageBanner == "yes" %}banner-padding{% endif %}"></a>
+<div class="mobile-nav-holder mobile-nav-hide {% if messageBanner == "yes" %}banner-padding{% endif %}">
+	<div class="mobile-nav-inner">
+	<a class="{% if page.pageid == "index" %}current{% endif %}" href="{{base}}/index.html">Home</a>
+	<a class="mobile-submenu-title mobile-sub-menu-propos-title {% if page.pageid == "about" or page.pageid == "historique" or page.pageid == "faq" or page.pageid == "images" %}current{% endif %}" href="#">About Us <div class="arrow-down"></div></a>
+	<div class="propos-sub-holder">
+	<a class="mobile-submenu-link {% if page.pageid == "historique"%}current{% endif %}" href="{{base}}/eng/our-history.html">Our History</a>
+	<a class=" mobile-submenu-link {% if page.pageid == "images" %}current{% endif %}" href="{{base}}/eng/images.html">Image Gallery</a>
+	<a class="mobile-submenu-link {% if page.pageid == "faq" %}current{% endif %}" href="{{base}}/eng/faq.html">FAQ</a>
+	</div>
+	<a class="mobile-submenu-title mobile-sub-menu-services-title {% if page.pageid == "services" or page.pageid == "team-building" or page.pageid == "exterieurs" or page.pageid == "interieurs" or page.pageid == "league" %}current{% endif %}" href="#">Services <div class="arrow-down"></div></a>
+	<div class="services-sub-holder">
+	<a class="mobile-submenu-link {% if page.pageid == "interieurs" %}current{% endif %}" href="{{base}}/eng/indoor-targets.html">Indoor Targets</a>
+	<a class="mobile-submenu-link {% if page.pageid == "exterieurs" %}current{% endif %}" href="{{base}}/eng/outdoor-targets.html">Outdoor Targets (mobile)</a>
+	<a class="mobile-submenu-link {% if page.pageid == "league" %}current{% endif %}" href="{{base}}/eng/axe-throwing-league.html">Axe Throwing League</a>
+	<a class="mobile-submenu-link {% if page.pageid == "team-building" %}current{% endif %}" href="{{base}}/eng/team-building.html">Team Building</a>
+	</div>
+	
+	<a class="mobile-submenu-title mobile-sub-menu-tarifs-title {% if page.pageid == "tarifs" or page.pageid == "gifts" %}current{% endif %}" href="#">Rates <div class="arrow-down"></div></a>
+	<div class="tarifs-sub-holder">
+	<a class="mobile-submenu-link {% if page.pageid == "tarifs" %}current{% endif %}" href="{{base}}/eng/rates.html">Rates</a>
+	<a class="mobile-submenu-link {% if page.pageid == "gifts" %}current{% endif %}" href="{{base}}/eng/gift-cards.html">Gift Cards</a>
+	</div>
+	
+	<a class="{%- if page.pageid == "contact" or page.pageid == "merci" -%}current{%- endif -%}" href="{{base}}/eng/contact-us.html">Contact Us</a>
+	<a class="reserve-btn reserve-btn-mobile {%- if page.pageid == "reservations" -%}current{%- endif -%}" href="{{base}}/eng/reserve.html">Reserve Now</a>
+	<a href="#" class="mobile-nav-btn-close"></a>
+	<div class="mobile-bottom">
+	<a href="{{base}}{{ page.altlink }}" class="lang-btn lang-btn-mobile">FR</a>
+	<div class="social-holder">
+		<a class="facebook" href="https://www.facebook.com/Maniaxofficiel"></a>
+		<a class="instagram" href="https://www.instagram.com/maniaxofficiel/"></a>
+	</div>
+	</div>
+	</div>
+	<div class="tarif-holder-background"></div>
+</div>

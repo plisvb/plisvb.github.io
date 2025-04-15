@@ -1,0 +1,82 @@
+{% assign messageBanner = "no" %}
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XBG2DJE62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3XBG2DJE62');
+</script>
+<script defer data-domain="maniax.ca" src="https://rogue.orongowebhosting.com/js/script.js"></script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>Maniax laval / Lancer de haches {% if page.pageid == "index" %}{% else %}{{ page.pagetitle | strip_html }}{% endif %}</title>
+<meta name="description" content="{{ page.pagedesc }}">
+<meta name="keywords" content="{{ page.pagekeywords }}">
+<meta itemprop="datePublished" content="{{ "now" | date: "%Y-%m-%d %H:%M" }}"/>
+<meta itemprop="dateModified" content="{{ "now" | date: "%Y-%m-%d %H:%M" }}"/>
+<link rel="alternate" hreflang="fr" href="https://www.maniax.ca{{ page.permalink }}" />
+<link rel="alternate" hreflang="en" href="https://www.maniax.ca{{ page.altlink }}" />
+<link rel="canonical" href="https://www.maniax.ca{{ page.permalink }}" />
+<meta name="robots" content="all">
+<meta name="twitter:image" content="https://www.maniax.ca/assets/imgs/heros/facebook-banner.png" />
+<meta name="twitter:site" content="https://www.maniax.ca{{ page.permalink }}" />
+<meta name="twitter:description" content="{{ page.pagedesc }}" />
+<meta name="twitter:title" content="{{ page.pagetitle }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://www.maniax.ca/assets/imgs/heros/facebook-banner.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="650">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.maniax.ca{{ page.permalink }}"/>
+<meta property="og:title" content="{{ page.pagetitle }}" />
+<meta property="og:description" content="{{ page.pagedesc }}" />
+
+
+{% include base.html %}
+<link rel="stylesheet" href="{{base}}/assets/styles.css" title="style" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="{{base}}/assets/animate.css" title="style" type="text/css" media="screen" charset="utf-8"> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="{{base}}/assets/js/scripts.js" crossorigin="anonymous"></script>
+<script>new WOW().init();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- FAVICON -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{base}}/assets/imgs/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{base}}/assets/imgs/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{base}}/assets/imgs/favicons/favicon-16x16.png">
+<link rel="manifest" href="{{base}}/assets/imgs/favicons/site.webmanifest">
+<link rel="mask-icon" href="{{base}}/assets/imgs/favicons/safari-pinned-tab.svg" color="#c10005">
+<meta name="msapplication-TileColor" content="#c10005">
+<meta name="theme-color" content="##c10005">
+</head>
+
+<body id="{{ page.pageid }}">
+	{% if messageBanner == "yes" %}{% include message-banner.html %}{% endif %}
+	{% include navigation.html %}
+	{% include mobile-navigation.html %}
+	<header>
+		{%- if page.pageid == "index" -%}<div class="header-logo-holder"></div> 
+		<div class="line-axe-holder">
+		<div class="line"></div>
+		<div class="axe-solo"></div>
+		</div>
+		<h1>{{page.pageh1}}</h1>
+		{%- else -%}
+		<h1>{{page.pageh1}}</h1>
+		<div class="line-axe-holder">
+		<div class="line"></div>
+		<div class="axe-solo"></div>
+		</div>
+		{%- endif -%}
+		{%- if page.pageid == "index" -%}<a class="main-button" href="{{base}}/reservez.html">Réservez maintenant</a>{%- endif -%}
+	</header>
+	

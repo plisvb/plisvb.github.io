@@ -1,0 +1,24 @@
+<div class="text-carousel">
+	 <div id="slide1" class="slides">Anniversaires</div>
+	 <div id="slide2" class="slides">Bachelors et bachelorettes</div>
+	 <div id="slide3" class="slides">Fêtes privées</div>
+	 <div id="slide4" class="slides">Départ à la retraite</div>
+</div>
+
+<script>
+var slideCount = $('.text-carousel').children().length;
+var currentID = 1;
+// $('.slides').css('display','none');
+$('#slide' + currentID).addClass('text-fade-in');
+//Processing
+setInterval(function(){
+	var nextID = currentID + 1;
+	if (nextID > slideCount) {
+		nextID = 1;
+	}
+	$('.slides').removeClass('text-fade-out text-fade-in');
+	$('#slide' + currentID).addClass('text-fade-out');
+	$('#slide' + nextID).addClass('text-fade-in');
+	currentID = nextID;
+},3500);
+</script>

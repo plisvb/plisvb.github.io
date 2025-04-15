@@ -1,0 +1,28 @@
+---
+permalink: /faq.html
+altlink: /eng/faq.html
+layout: default
+pagetitle: Lancer de haches • les questions que tout le monde se pose (et nos réponses)!
+pageh1: Questions fréquentes <span>sur le lancer de hache chez Maniax</span>
+pageid: faq
+pagekeywords: FAQ sur le lancer de hache, FAQ de Maniax, questions fréquentes sur le lancer de hache, demandes de renseignements sur le lancer de hache, détails sur le lancer de hache, requêtes sur le lancer de hache, informations sur le lancer de hache, réponses sur le lancer de hache, guide du lancer de hache, aide pour le lancer de hache, conseils sur le lancer de hache, conseils pour le lancer de hache, demandes de renseignements sur Maniax, détails sur Maniax, questions sur Maniax.
+pagedesc: Maniax, Expériences uniques de lancer de hache en intérieur et en extérieur situées à Laval, Québec.
+body: faq
+---
+
+{% include faq.html %}
+
+<script>
+	
+	$(document).ready(function() {
+	  $('.faq-question').each(function() {
+		  faqWidth = $(this).width();
+		  faqwidthBreakpoint = ($(window).width()*.8);
+		 if(faqWidth > faqwidthBreakpoint) {
+			 $(this).closest('.faq-holder').addClass('faq-breakpoint');
+		 }
+		  console.log(faqWidth);
+		  console.log(faqwidthBreakpoint);
+	  });
+	});
+</script>

@@ -1,0 +1,28 @@
+---
+altlink: /faq.html
+permalink: /eng/faq.html
+layout: default-eng
+pagetitle: Got Questions About Axe Throwing? Find the Answers Here...
+pageh1: Frequently Asked Questions<span>About Axe Throwing at Maniax</span>
+pageid: faq
+pagekeywords: Axe throwing FAQ, Maniax FAQ, frequently asked questions axe throwing, axe throwing inquiries, axe throwing details, axe throwing queries, axe throwing information, axe throwing answers, axe throwing guide, axe throwing help, axe throwing tips, axe throwing advice, Maniax inquiries, Maniax details, Maniax questions
+pagedesc: Unique indoor and outdoor axe-throwing experiences located in Laval, Quebec.
+body: faq
+---
+
+{% include faq-eng.html %}
+
+<script>
+	
+	$(document).ready(function() {
+	  $('.faq-question').each(function() {
+		  faqWidth = $(this).width();
+		  faqwidthBreakpoint = ($(window).width()*.8);
+		 if(faqWidth > faqwidthBreakpoint) {
+			 $(this).closest('.faq-holder').addClass('faq-breakpoint');
+		 }
+		  console.log(faqWidth);
+		  console.log(faqwidthBreakpoint);
+	  });
+	});
+</script>

@@ -1,0 +1,32 @@
+<nav {% if messageBanner == "yes" %}class="banner-padding"{% endif %}>
+	<a class="home-btn {% if page.pageid == "index" %}current{% endif %}" href="{{base}}/eng/index.html"></a>
+	<div class="submenu-btn">
+		<a class="{% if page.pageid == "about" or page.pageid == "historique" or page.pageid == "faq" or page.pageid == "images" %}current{% endif %}" href="#">About Us</a>
+		<div class="submenu">
+			<a class="{% if page.pageid == "historique" %}current{% endif %}" href="{{base}}/eng/our-history.html">Our History</a>
+			<a class="{% if page.pageid == "images" %}current{% endif %}" href="{{base}}/eng/images.html">Image Gallery</a>
+			<a class="{% if page.pageid == "faq" %}current{% endif %}" href="{{base}}/eng/faq.html">FAQ</a>
+		</div>
+	</div>
+	<div class="submenu-btn">
+		<a class="{% if page.pageid == "services" or page.pageid == "team-building" or page.pageid == "exterieurs" or page.pageid == "interieurs" or page.pageid == "league" %}current{% endif %}" href="#">Services</a>
+	<div class="submenu">
+		<a class="{% if page.pageid == "interieurs" %}current{% endif %}" href="{{base}}/eng/indoor-targets.html">Indoor Targets</a>
+		<a class="{% if page.pageid == "exterieurs" %}current{% endif %}" href="{{base}}/eng/outdoor-targets.html">Outdoor Targets (mobile)</a>
+		<a class="{% if page.pageid == "league" %}current{% endif %}" href="{{base}}/eng/axe-throwing-league.html">Axe Throwing League</a>
+		<a class="{% if page.pageid == "team-building" %}current{% endif %}" href="{{base}}/eng/team-building.html">Team building</a>
+	</div>
+	</div>
+	
+	<div class="submenu-btn">
+	<a class="{%- if page.pageid == "tarifs" or page.pageid == "gifts" -%}current{%- endif -%}" href="#">Rates</a>
+	<div class="submenu">
+		<a class="{%- if page.pageid == "tarifs" -%}current{%- endif -%}" href="{{base}}/eng/rates.html">Rates</a>
+		<a class="{%- if page.pageid == "gifts" -%}current{%- endif -%}" href="{{base}}/eng/gift-cards.html">Gift Cards</a>
+	</div>
+	</div>
+	
+	<div><a class="{%- if page.pageid == "contact" or page.pageid == "merci" -%}current{%- endif -%}" href="{{base}}/eng/contact-us.html">Contact Us</a></div>
+	<div class="reserve-btn"><a class="{%- if page.pageid == "reservations" -%}current{%- endif -%}" href="{{base}}/eng/reserve.html">Reserve Now</a></div>
+</nav>
+<a href="{{base}}{{ page.altlink }}" class="lang-btn {% if messageBanner == "yes" %}banner-padding{% endif %}">FR</a>

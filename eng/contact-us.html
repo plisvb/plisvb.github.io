@@ -1,0 +1,91 @@
+---
+altlink: /nous-joindre.html
+permalink: /eng/contact-us.html
+layout: default-eng
+pagetitle: Got Questions? Contact Maniax and Plan Your Visit!
+pageh1: Contact Maniax <span>Plan Your Axe Throwing Session</span>
+pageid: contact
+pagekeywords: Maniax axe throwing contact, Montreal axe throwing contact, Laval axe throwing contact, contact us Maniax Montreal, contact us Maniax Laval, axe throwing inquiries, axe throwing reservations, axe throwing bookings, customer support Maniax, get in touch Maniax, axe throwing venue contact.
+pagedesc: Contact Maniax Axe Throwing in Montreal & Laval.
+body: contact
+---
+	<section><h2>How to Find us</h2></section>
+	<div class="location-map wow fadeInUp" data-wow-offset="100" data-wow-duration=".40s" data-wow-delay=".10s">
+		<div class="location-info wow fadeInLeft" data-wow-offset="100" data-wow-duration=".40s" data-wow-delay=".5s">
+			<div class="addresses">
+				<a data-tooltip="Coordinates" data-flow="top" class="current" data-current="address-tab" href="#"><div class="addresses-icon"></div></a>
+				<a data-tooltip="Public Transportation" data-flow="top" data-current="metro-tab" href="#"><div class="bus-icon"></div></a>
+				<a data-tooltip="Information" data-flow="top" data-current="info-tab" href="#"><div class="info-icon"></div></a>	
+				<a data-tooltip="Schedule" data-flow="top" data-current="schedule-tab" href="#"><div class="schedule-icon"></div></a>	
+			</div>
+			
+			<div class="footer-logo"></div>
+			<div class="address-holder current address-tab">
+			<address>
+				1035 Desserte Nord<br/>
+				Autoroute 440, Laval, QC<br/>
+				H7L 3W3
+				<div class="thin-line"></div>
+				(Behind the Éco Dépôt Céramique)
+			</address>
+
+			<div class="phone">1-450-328-0800</div>
+			<a class="maps-btn" href="https://www.google.com/maps/place/Maniax+Laval+-+Throwing+axes/@45.585697,-73.7428336,17z/data=!4m6!3m5!1s0x4cc921615449739f:0xe8f8f665d2030932!8m2!3d45.585697!4d-73.7402587!16s%2Fg%2F11df22gzn5?entry=ttu">Google Maps Link</a>
+			</div>
+			
+			<div class="address-holder metro-tab">
+			<div class="metro-holder"><div class="orange-line-icon"></div><p>Cartier Métro</p></div>
+			<div class="bus-holder"><div class="bus">37</div><div class="bus">345</div></div>
+			<div class="thin-line"></div>
+			<div class="metro-holder"><div class="orange-line-icon"></div><p>Montmorency Métro</p></div>
+			<div class="bus-holder"><div class="bus">45</div><div class="bus">63</div><div class="bus">65</div><div class="bus">76</div></div>
+			<a class="maps-btn stl-logo" href="https://stlaval.ca/planner">STL Link</a>
+			</div>
+			
+			<div class="schedule address-holder schedule-tab">
+			<p><strong>MONDAY TO SUNDAY<br/>11am to 11pm</strong><span class="reservation-message"><strong>OPEN UPON RESERVATIONS</strong></span></p>
+			<div class="thin-line"></div>
+			<p>Walk-ins are accepted if we're already open for other reservations.</p>
+			</div>
+			
+			<div class="address-holder info-tab">
+			<p>Maniax<sup class="trademark">®</sup> Laval is situated along the <strong>autoroute 440 West (north side)</strong> just near the boulevard Industriel exit, <strong>between autoroutes 15 and 19</strong>.</p>
+			<div class="thin-line"></div>
+			<p><strong>15 minutes from Montréal or Dorval</strong></p>
+			<div class="thin-line"></div>
+			<p>More than <strong>100 free parking spots</strong> are available on the side of the building.</p>
+			</div>
+			
+		</div>
+	<div class="mobile-map"></div>	
+	</div>
+	<div class="tab-holder">
+		<a data-current="contact-form-tab" class="current" href="#">Contact Us</a>	
+		<a class="faq-tab-btn" data-current="faq-tab" href="#">Faq</a>
+	</div>
+	<div class="tarifs-holder-outer location-holder contact-form-tab current">
+		<style>
+		body {font-family: 'Montserrat', sans-serif; font-size: 16px; background-color: rgba(8,8,8, 1)}
+		.form-all {max-width: 1140px; margin-top: 0}
+		</style>
+		<script type="text/javascript" src="https://form.jotform.com/jsform/233054410566248"></script>
+	</div>
+	
+	<div class="tarifs-holder-outer faq-tab">
+	{% include faq-eng.html %}
+	</div>
+	
+	<script>
+		
+		$(document).on("click", ".faq-tab-btn", function(){
+		  $('.faq-question').each(function() {
+			  faqWidth = $(this).width();
+			  faqwidthBreakpoint = ($(window).width()*.8);
+			 if(faqWidth > faqwidthBreakpoint) {
+				 $(this).closest('.faq-holder').addClass('faq-breakpoint');
+			 }
+			  console.log(faqWidth);
+			  console.log(faqwidthBreakpoint);
+		  });
+		});
+	</script>

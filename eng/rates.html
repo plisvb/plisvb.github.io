@@ -1,0 +1,34 @@
+---
+altlink: /tarifs.html
+permalink: /eng/rates.html
+layout: default-eng
+pagetitle: Axe Throwing Pricing • Affordable Fun for Everyone!
+pageh1: Axe Throwing Session Rates at Maniax
+pageid: tarifs
+pagekeywords: Axe throwing rates, Maniax pricing, axe throwing costs, axe throwing fees, axe throwing prices, Maniax activities pricing, axe throwing sessions, rates for axe throwing, pricing details, affordable axe throwing, competitive prices axe throwing, cost-effective axe throwing, best rates for axe throwing, Maniax pricing options.
+pagedesc: Axe Throwing Rates • Pricing for Maniax Activities
+body: tarifs
+---
+
+
+<section>
+	<h3>Choose your package:</h3>
+	<div class="tab-holder">
+		<a data-current="base-tab" class="current" href="#">Base</a>
+		<a data-current="events-tab" href="#">Events</a>
+		<a data-current="league-tab" href="#">League</a>	
+	</div>
+<div class="tarifs-holder-outer base-tab current">
+	{%- if page.pageid == "tarifs" -%}<h2>Indoor Targets</h2>{%- endif -%}
+	<div class="flex-holder-outer">
+		{% include base-plan-90-eng.html %}	
+		{% include base-plan-60-eng.html %}		
+	</div>
+</div>
+<div class="tarifs-holder-outer events-tab">	
+{% include events-price-table-eng.html %}
+</div>	
+{% include league-plan-eng.html %}
+
+</section>
+

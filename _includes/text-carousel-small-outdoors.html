@@ -1,0 +1,25 @@
+<div class="text-carousel-two">
+	 <div id="slide-two1" class="slides-two">Festivales</div>
+	 <div id="slide-two2" class="slides-two">Bachelors et bachelorettes</div>
+	 <div id="slide-two3" class="slides-two">Fêtes privées</div>
+	 <div id="slide-two4" class="slides-two">Anniversaires</div>
+	 <div id="slide-two5" class="slides-two">Départ à la retraite</div>
+</div>
+
+<script>
+var slideCountTwo = $('.text-carousel-two').children().length;
+var currentIDTwo = 1;
+// $('.slides').css('display','none');
+$('#slide–two' + currentIDTwo).addClass('text-fade-in');
+//Processing
+setInterval(function(){
+	var nextIDTwo = currentIDTwo + 1;
+	if (nextIDTwo > slideCountTwo) {
+		nextIDTwo = 1;
+	}
+	$('.slides-two').removeClass('text-fade-out text-fade-in');
+	$('#slide-two' + currentIDTwo).addClass('text-fade-out');
+	$('#slide-two' + nextIDTwo).addClass('text-fade-in');
+	currentIDTwo = nextIDTwo;
+},3500);
+</script>

@@ -1,0 +1,34 @@
+---
+permalink: /tarifs.html
+altlink: /eng/rates.html
+layout: default
+pagetitle: Tarifs Maniax • Combien ça coûte vraiment ? Découvrez ici…
+pageh1: Tarifs des sessions <span>de lancer de hache chez Maniax</span>
+pageid: tarifs
+pagekeywords: Tarifs de lancer de hache, tarification de Maniax, coûts de lancer de hache, frais de lancer de hache, prix de lancer de hache, tarification des activités de Maniax, séances de lancer de hache, tarifs pour le lancer de hache, détails de tarification, lancer de hache abordable, prix compétitifs pour le lancer de hache, lancer de hache économique, meilleurs tarifs pour le lancer de hache, options de tarification de Maniax.
+pagedesc: Tarifs de lancer de hache • Prix des activités Maniax
+body: tarifs
+---
+
+
+<section>
+	<h3>Choisissez votre forfait:</h3>
+	<div class="tab-holder">
+		<a data-current="base-tab" class="current" href="#">De base</a>
+		<a data-current="events-tab" href="#">Événements</a>
+		<a data-current="league-tab" href="#">Ligue</a>	
+	</div>
+<div class="tarifs-holder-outer base-tab current">
+	{%- if page.pageid == "tarifs" -%}<h2>Cibles intérieurs</h2>{%- endif -%}
+	<div class="flex-holder-outer">
+		{% include base-plan-90.html %}
+		{% include base-plan-60.html %}
+	</div>
+</div>
+<div class="tarifs-holder-outer events-tab">	
+{% include events-price-table.html %}
+</div>	
+{% include league-plan.html %}
+
+</section>
+
